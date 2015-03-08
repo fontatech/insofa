@@ -1,0 +1,14 @@
+- var environment = 'dev'
+
+title Insofa
+meta(name='viewport', content='device-width=width, initial-scale=1, user-scalable=no')
+
+if environment == 'dev'
+  //- scripts
+  script(src='js/main.js')
+
+  //- css
+  link(rel='stylesheet', href='css/screen.css')
+
+else if environment == 'prod'
+  

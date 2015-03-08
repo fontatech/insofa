@@ -1,0 +1,101 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+@font-face {
+    font-family: "Brandon";
+    src: url(../fonts/BrandonGrotesque-Regular.otf);
+}
+
+@font-face {
+    font-family: "BrandonMedium";
+    src: url(../fonts/BrandonGrotesque-Medium.otf);
+}
+
+@font-face {
+    font-family: "BrandonBold";
+    src: url(../fonts/BrandonGrotesque-Bold.otf);
+}
+
+@font-face {
+    font-family: "BrandonBlack";
+    src: url(../fonts/BrandonGrotesque-Black.otf);
+}
+
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+    font-family: "Brandon";
+    background-color: #fff;
+    padding: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-container {
+    width: 100%;
+    background-color: #eaeaea;
+}
+
+#main-container-inner {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.mobi {
+    display: none;
+}
+
+.container {
+    width: 100%;
+}
+
+header.desktop {
+    height: 260px;
+    padding-top: 120px;
+}
+
+#logocont {
+    float: left;
+    width: 15%;
+    height: 58px;
+
+    img {
+        float: left;
+    }
+}
+
+#menu {
+    width: 85%;
+    height: 58px;
+    float: left;
+    text-align: right;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+#lang-container {
+    display: inline-block;
+}
+
+.menu-item {
+    font-family: "BrandonMedium";
+    font-size: 15px;
+    color: #4e4847;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 34px;
+    margin-top: 41px;
+
+    &.active {
+        font-family: "BrandonBlack";
+    }
+}

@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    include ./includes/header.jade
+
+  body
+    div#main-container
+      div#main-container-inner
+        header.mobi
+          div#logocont
+            img(src='img/logo.png')
+          div#openmenu
+            span Menu
+            img(src='img/menumobi.png')
+
+        header.desktop.container
+          div#logocont
+            img(src="img/logo.png")
+          nav#menu
+            a(href="/").menu-item.active Home
+            a(href="/").menu-item Profile
+            a(href="/").menu-item Il divano
+            a(href="/").menu-item Prodotti
+            a(href="/").menu-item Servizi Dedicati
+            a(href="/").menu-item News
+            a(href="/").menu-item Contatti
+
+            div#lang-container
+              div.triangle-bottom
+              span English
+
+        div.container
+          div#box-divani.container.container-right
+            div#box-divani-inner.
+        block content
+

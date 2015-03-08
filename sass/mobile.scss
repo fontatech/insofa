@@ -1,0 +1,187 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+@font-face {
+    font-family: "Brandon";
+    src: url(../fonts/BrandonGrotesque-Regular.otf);
+}
+
+@font-face {
+    font-family: "BrandonMedium";
+    src: url(../fonts/BrandonGrotesque-Medium.otf);
+}
+
+@font-face {
+    font-family: "BrandonBold";
+    src: url(../fonts/BrandonGrotesque-Bold.otf);
+}
+
+@font-face {
+    font-family: "BrandonBlack";
+    src: url(../fonts/BrandonGrotesque-Black.otf);
+}
+
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+    font-family: "Brandon";
+    background-color: #fff;
+    padding: 6px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-container {
+    width: 100%;
+    background-color: #eaeaea;
+    padding: 6px;
+}
+
+#main-container-inner {
+    width: 295px;
+    margin: 0 auto;
+}
+
+#logocont {
+    height: 120px;
+    border-bottom: 1px solid #d1d1d1;
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 6px;
+    *zoom: 1;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+.container img {
+    width: 100%;
+}
+
+#logocont img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+}
+
+#openmenu {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+#openmenu span {
+    font-size: 18px;
+    font-family: "BrandonBold";
+    color: #867e75;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+#slider img {
+    width: 100%;
+}
+
+.container-gray {
+    background-color: #c1bfbd;
+    padding: 30px;
+}
+
+h1 {
+    line-height: 120%;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: "BrandonBold";
+    color: #4e4847;
+}
+
+p {
+    line-height: 120%;
+    font-size: 15px;
+    color: #4e4847;
+    margin: 6px 0;
+}
+
+.btn.continua {
+    text-transform: uppercase;
+    font-family: "BrandonBold";
+    height: 38px;
+    line-height: 38px;
+    padding: 0 15px;
+    border: 1px solid #4e4847;
+    color: #4e4847;
+    margin: 6px 0;
+    display: inline-block;
+}
+
+#openmenu img {
+    vertical-align: middle;
+}
+
+.relative {
+    position: relative;
+}
+
+.table {
+    display: table;
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#artigianalita {
+    text-transform: uppercase;
+    background-color: #4e4847;
+    color: #fff;
+    line-height: 120%;
+    font-size: 22px;
+    height: 110px;
+}
+
+.goto-box {
+    width: 100%;
+    background-color: #4e4847;
+    height: 35px;
+    float: left;
+}
+
+.triangle-bottom {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 10px 0 10px;
+    border-color: #fff transparent transparent transparent;
+    margin: 0 auto;
+}
+
+#sofa img, .imgbox img {
+    margin: 0;
+    float: left;
+}
+
