@@ -1,25 +1,38 @@
 extends ./layout.jade
 
 block content
-    div#slider.container.imgbox
-        img(src='img/slider/1.png')
+    div#grid
+      div#slider.container.imgbox.paddingbottom
+        div.container-inner
+          img(src='img/slider/1.png')
 
-    div.container.container-gray
-      h1 Divani di qualit&agrave; dal 2002
-      p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit ...
-      div.btn.continua Continua
+      div#divanidiqualita.container.container-gray.paddingright
+        div.container-inner.relative
+          h1 Divani di qualit&agrave; dal 2002
+          p Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit 
+            span.hid-animation ...
+            span.show-animation Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
 
-    div#sofa.container.relative
-      img(src='img/sofa.png')
-      div.goto-box.table
-        div.cell
-          div.triangle-bottom
+          div#open-fulltext.bottom-bar.pointer.hoverable
+            div.triangle-bottom.centered
 
-    div.imgbox.container.relative
-      img(src='img/boximg.png')
+        div#close-fulltext
+          span
 
-    div#artigianalita.container.table
-      div.cell
-        span Artigianalit&agrave; & esperienza
+      div#sofa.container.paddingbottom
+        div.container-inner.relative
+          img(src='img/sofa.png')
 
-        h1
+          div.right-bar.pointer.hoverable
+            div.triangle-bottom.centered
+
+      div#imagebox.imgbox.container.paddingright
+        div.container-inner.hoverable-bottom.relative
+          img(src='img/boximg.png')
+          div.hover
+            div.centered SERVIZI ALL-INCLUSIVE DAL PRODUTTORE
+
+      div#artigianalita.container
+        div.container-inner.table.hoverable
+          div.cell
+            span Artigianalit&agrave; & esperienza
