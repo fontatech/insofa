@@ -1,0 +1,45 @@
+@-webkit-keyframes fadeToTop {
+    0% {
+    }
+
+    50% {
+        opacity: 0;
+        top: 75%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+@-moz-keyframes fadeToTop {
+    0% {
+    }
+
+    50% {
+        opacity: 0;
+        top: 75%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+@keyframes fadeToTop {
+    0% {
+    }
+
+    50% {
+        opacity: 0;
+        top: 75%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
+    }
+}
+

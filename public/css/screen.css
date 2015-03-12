@@ -103,45 +103,77 @@ a {
 }
 
 /* line 43, ../../sass/screen.scss */
+img {
+  border: 0;
+}
+
+/* line 47, ../../sass/screen.scss */
 #main-container {
   width: 100%;
   background-color: #eaeaea;
 }
 
-/* line 48, ../../sass/screen.scss */
+/* line 52, ../../sass/screen.scss */
 #main-container-inner {
   width: 1400px;
   margin: 0 auto;
 }
 
-/* line 53, ../../sass/screen.scss */
+/* line 57, ../../sass/screen.scss */
 .mobi {
   display: none;
 }
 
-/* line 57, ../../sass/screen.scss */
+/* line 61, ../../sass/screen.scss */
 .container {
+  float: left;
+  width: 100%;
+  color: #4e4847;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+/* line 67, ../../sass/screen.scss */
+.container.imgbox img {
   width: 100%;
 }
+/* line 71, ../../sass/screen.scss */
+.container.paddingbottom {
+  padding-bottom: 25px;
+}
+/* line 75, ../../sass/screen.scss */
+.container.paddingleft {
+  padding-left: 25px;
+}
+/* line 79, ../../sass/screen.scss */
+.container.paddingright {
+  padding-right: 25px;
+}
+/* line 83, ../../sass/screen.scss */
+.container .container-inner {
+  width: 100%;
+  height: 100%;
+}
 
-/* line 61, ../../sass/screen.scss */
+/* line 89, ../../sass/screen.scss */
 header.desktop {
   height: 260px;
   padding-top: 120px;
 }
 
-/* line 66, ../../sass/screen.scss */
+/* line 94, ../../sass/screen.scss */
 #logocont {
   float: left;
   width: 15%;
   height: 58px;
 }
-/* line 71, ../../sass/screen.scss */
+/* line 99, ../../sass/screen.scss */
 #logocont img {
   float: left;
 }
 
-/* line 76, ../../sass/screen.scss */
+/* line 104, ../../sass/screen.scss */
 #menu {
   width: 85%;
   height: 58px;
@@ -151,12 +183,12 @@ header.desktop {
   vertical-align: bottom;
 }
 
-/* line 85, ../../sass/screen.scss */
+/* line 113, ../../sass/screen.scss */
 #lang-container {
   display: inline-block;
 }
 
-/* line 89, ../../sass/screen.scss */
+/* line 117, ../../sass/screen.scss */
 .menu-item {
   font-family: "BrandonMedium";
   font-size: 15px;
@@ -166,7 +198,372 @@ header.desktop {
   margin-right: 34px;
   margin-top: 41px;
 }
-/* line 98, ../../sass/screen.scss */
+/* line 126, ../../sass/screen.scss */
 .menu-item.active {
   font-family: "BrandonBlack";
+}
+
+/* line 131, ../../sass/screen.scss */
+#lang-container {
+  border: 1px solid #d8d8d8;
+  height: 48px;
+  line-height: 48px;
+  width: 146px;
+  padding-left: 22px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+}
+/* line 141, ../../sass/screen.scss */
+#lang-container span {
+  color: #4e4847;
+  font-family: "BrandonBold";
+  text-transform: uppercase;
+}
+/* line 147, ../../sass/screen.scss */
+#lang-container .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 5px 0 5px;
+  border-color: #4e4847 transparent transparent transparent;
+  position: absolute;
+  top: 20px;
+  right: 22px;
+}
+/* line 158, ../../sass/screen.scss */
+#lang-container #langs {
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: 146px;
+  max-height: 0;
+  overflow: hidden;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 167, ../../sass/screen.scss */
+#lang-container #langs a {
+  display: block;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  background-color: #c5c3c1;
+  padding-left: 23px;
+  font-family: "BrandonBold";
+  text-transform: uppercase;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 179, ../../sass/screen.scss */
+#lang-container #langs a:hover {
+  background-color: #4e4847;
+}
+
+/* line 186, ../../sass/screen.scss */
+#divanidiqualita {
+  width: 40.7%;
+  height: 827px;
+}
+/* line 190, ../../sass/screen.scss */
+#divanidiqualita .container-inner {
+  background-color: #c5c3c1;
+  padding: 110px 128px 70px 62px;
+}
+/* line 195, ../../sass/screen.scss */
+#divanidiqualita h1 {
+  line-height: 120%;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 45px;
+  font-family: "BrandonBold";
+}
+/* line 203, ../../sass/screen.scss */
+#divanidiqualita.go-animation {
+  width: 100%;
+  padding-right: 0;
+  z-index: 3;
+}
+/* line 208, ../../sass/screen.scss */
+#divanidiqualita.go-animation .hid-animation {
+  display: none;
+}
+/* line 212, ../../sass/screen.scss */
+#divanidiqualita.go-animation .show-animation {
+  display: inline;
+}
+/* line 216, ../../sass/screen.scss */
+#divanidiqualita.go-animation #close-fulltext span {
+  display: block;
+}
+/* line 221, ../../sass/screen.scss */
+#divanidiqualita #close-fulltext {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 120px;
+  right: 70px;
+  cursor: pointer;
+}
+/* line 229, ../../sass/screen.scss */
+#divanidiqualita #close-fulltext span {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -13px;
+  background-color: #4e4847;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: none;
+}
+/* line 242, ../../sass/screen.scss */
+#divanidiqualita #close-fulltext span:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 2px;
+  background-color: #4e4847;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 256, ../../sass/screen.scss */
+p {
+  font-size: 27px;
+  color: #4e4847;
+  line-height: 120%;
+  font-family: "Brandon";
+}
+/* line 262, ../../sass/screen.scss */
+p b, p strong {
+  font-family: "BrandonBold";
+}
+
+/* line 267, ../../sass/screen.scss */
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: #4e4847;
+  color: #fff;
+}
+
+/* line 277, ../../sass/screen.scss */
+.right-bar {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 70px;
+  background-color: #4e4847;
+  color: #fff;
+}
+
+/* line 287, ../../sass/screen.scss */
+.relative {
+  position: relative;
+}
+
+/* line 291, ../../sass/screen.scss */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 298, ../../sass/screen.scss */
+.pointer {
+  cursor: pointer;
+}
+
+/* line 302, ../../sass/screen.scss */
+.triangle-bottom {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 12px 0 12px;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+/* line 310, ../../sass/screen.scss */
+#sofa {
+  height: 568px;
+  width: 59.3%;
+}
+/* line 314, ../../sass/screen.scss */
+#sofa .container-inner {
+  background-color: #fff;
+}
+/* line 318, ../../sass/screen.scss */
+#sofa img {
+  position: absolute;
+  bottom: 40px;
+}
+
+/* line 324, ../../sass/screen.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 328, ../../sass/screen.scss */
+#imagebox {
+  width: 40.7%;
+  height: 259px;
+}
+
+/* line 333, ../../sass/screen.scss */
+#artigianalita {
+  width: 18.6%;
+  height: 259px;
+  background-color: #4e4847;
+  font-size: 28px;
+  font-family: "Brandon";
+  text-transform: uppercase;
+  line-height: 120%;
+  color: #fff;
+}
+
+/* line 344, ../../sass/screen.scss */
+.table {
+  display: table;
+}
+/* line 347, ../../sass/screen.scss */
+.table .cell {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+
+/* line 356, ../../sass/screen.scss */
+.hoverable {
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 359, ../../sass/screen.scss */
+.hoverable:hover {
+  background-color: #867e75;
+}
+
+/* line 364, ../../sass/screen.scss */
+#grid {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+/* line 370, ../../sass/screen.scss */
+.hoverable-bottom {
+  overflow: hidden;
+}
+/* line 373, ../../sass/screen.scss */
+.hoverable-bottom .hover {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #807971;
+  opacity: 0.9;
+  color: #fff;
+  font-size: 28px;
+  font-family: "Brandon";
+  line-height: 120%;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 386, ../../sass/screen.scss */
+.hoverable-bottom .hover .centered {
+  width: 70%;
+  text-align: center;
+  opacity: 0;
+  top: 75%;
+}
+/* line 394, ../../sass/screen.scss */
+.hoverable-bottom:hover .hover {
+  top: 0;
+}
+/* line 397, ../../sass/screen.scss */
+.hoverable-bottom:hover .hover .centered {
+  -moz-animation: fadeToTop 1s 1;
+  -webkit-animation: fadeToTop 1s 1;
+  animation: fadeToTop 1s 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 406, ../../sass/screen.scss */
+footer {
+  height: 284px;
+  float: left;
+  width: 100%;
+}
+/* line 411, ../../sass/screen.scss */
+footer #line1 {
+  width: 100%;
+  height: 169px;
+  padding-bottom: 30px;
+  position: relative;
+  border-bottom: 1px solid #d1d1d1;
+}
+/* line 418, ../../sass/screen.scss */
+footer #line1 .half-width {
+  width: 50%;
+  float: left;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+/* line 425, ../../sass/screen.scss */
+footer #line1 .half-width.right {
+  right: 0;
+  left: auto;
+  text-align: right;
+}
+/* line 431, ../../sass/screen.scss */
+footer #line1 .half-width .social {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  border: 1px solid #d8d8d8;
+  cursor: pointer;
+  margin-left: 15px;
+  position: relative;
+}
+
+/* line 445, ../../sass/screen.scss */
+.show-animation {
+  display: none;
+}
+
+/* line 449, ../../sass/screen.scss */
+.hidden {
+  display: none;
 }
