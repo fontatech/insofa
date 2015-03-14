@@ -1,0 +1,57 @@
+extends ./layout.jade
+
+block content
+    div#grid
+
+      div#slider.container.imgbox.paddingbottom
+        div.container-inner
+          img(src='img/slider/1.png')
+
+      div.plaintext.container.paddingbottom.contatti1.paddingright
+        h2 CONTATTI DIRETTI
+
+      div.plaintext.container.paddingbottom.contatti2
+        h2 VORREI RICEVERE MAGGIORI INFORMAZIONI
+
+      div.onecolumn
+        a#contattitel(href="tel: +39 0438 995611").container.paddingright.paddingbottom
+          div.container-inner.relative
+            div.centered
+              img(src="img/svg/phone.svg")
+              br
+              span 0039 0438 995611
+
+        a#contattimail(href="mailto: info@insofa.it").container.paddingright
+          div.container-inner.relative
+            div.centered
+              img(src="img/svg/busta.svg")
+              br
+              span info@insofa.it
+
+        div.clearfix
+
+      div#contattiform.container.imgbox.paddingbottom
+        div.container-inner
+          form(action="", method="POST")#contact-form
+            input(name="nome", type="text", placeholder="Nome referente")#nome
+            input(name="email", type="text", placeholder="E-mail")#email
+            input(name="telefono", type="text", placeholder="Recapito telefonico")#telefono-form
+            input(name="fax", type="text", placeholder="Fax")#fax
+            textarea(name="messaggio")#messaggio Messaggio
+
+      div#contattisubmit.container
+        div#submit-button INVIA MESSAGGIO
+
+      div#textbox.container-gray.container.paddingright.ildivano
+        div.container-inner.relative
+          p.centered-vertical Fusce dapibus, tellus cursus commodo, tortor mauris condimentum nibh, ut fermentum massa usto sit amet risus.
+
+      div#imagebox.imgbox.container.paddingright
+        div.container-inner.hoverable-bottom.relative
+          img(src='img/boximg.png')
+          div.hover
+            div.centered SERVIZI ALL-INCLUSIVE DAL PRODUTTORE
+     
+      a(href="contatti.html")#contatti.container
+        div.container-inner.relative.hoverable
+          div.centered ARTIGIANALIT&Agrave; & ESPERIENZA

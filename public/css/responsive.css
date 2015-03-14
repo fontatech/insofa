@@ -1,21 +1,26 @@
-@media (max-width: 1449px) {
+@media (max-width: 1499px) {
   /* line 3, ../../sass/responsive.scss */
+  #prodotto .titolo {
+    width: 863px;
+  }
+
+  /* line 7, ../../sass/responsive.scss */
   #main-container {
     padding: 20px;
   }
 
-  /* line 7, ../../sass/responsive.scss */
+  /* line 11, ../../sass/responsive.scss */
   #main-container-inner {
     width: 1150px;
   }
 
-  /* line 11, ../../sass/responsive.scss */
+  /* line 15, ../../sass/responsive.scss */
   #divanidiqualita {
     height: 779px;
   }
 
-  /* line 15, ../../sass/responsive.scss */
-  #artigianalita, #imagebox {
+  /* line 19, ../../sass/responsive.scss */
+  #artigianalita, #imagebox, #imagebox.profile {
     height: 211px;
   }
 }

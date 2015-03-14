@@ -1,0 +1,87 @@
+extends ./layout.jade
+
+block content
+    div#grid
+
+      div#prodotto.container.imgbox.paddingbottom
+        div.container-inner.relative
+          img(src='img/topimg.png')
+
+          div.controls
+            div#goleft.control
+              span.goleft
+            div#open-img.control
+              img(src="img/svg/lente.svg").centered
+            div#goright.control
+              span.goleft.right
+            a(href="prodotti.html").control
+              span.xsign
+
+          div.condividibar
+            span CONDIVIDI
+            a(href="#").bu
+              img(src="img/svg/busta.svg")
+            a(href="#").fb
+              img(src="img/minifb.png")
+            a(href="#").tw
+              img(src="img/minitw.png")
+
+          div.titolo
+            h1 ECOPELLE E TESSUTO
+            span.rigabianca
+
+      div.plaintext.container
+        h2 CONTATTI DIRETTI
+
+      div#informazioni.container.paddingright.paddingbottom
+        div.container-inner.relative
+          div.centered
+            img(src="img/busta.png")
+            span Richiesta Informazioni
+
+      a#telefono.container.paddingbottom
+        div.container-inner.relative
+          div.centered
+            img(src="img/cornetta.png")
+            span Contatto telefonico
+
+
+      div#textbox.container-gray.container.paddingright.ildivano
+        div.container-inner.relative
+          p.centered-vertical Fusce dapibus, tellus cursus commodo, tortor mauris condimentum nibh, ut fermentum massa usto sit amet risus.
+
+      div#imagebox.imgbox.container.paddingright
+        div.container-inner.hoverable-bottom.relative
+          img(src='img/boximg.png')
+          div.hover
+            div.centered SERVIZI ALL-INCLUSIVE DAL PRODUTTORE
+
+      a(href="contatti.html")#contatti.container
+        div.container-inner.relative.hoverable
+          div.centered ARTIGIANALIT&Agrave; & ESPERIENZA
+
+block popups
+  div#popup-shadow
+
+  div#popup-img.popup-content
+    div.inner.relative
+      img(src="img/topimg.png").zoomable
+
+      div#close-img
+        span
+
+  div#popup-form
+    div.form-inner
+ 
+      div#close-form
+        span
+ 
+      h2 VORREI RICEVERE MAGGIORI INFORMAZIONI
+      form(action="", method="POST")#contact-form
+        input(name="nome", type="text", placeholder="Nome referente")#nome
+        input(name="email", type="text", placeholder="E-mail")#email
+        input(name="telefono", type="text", placeholder="Recapito telefonico")#telefono-form
+        input(name="fax", type="text", placeholder="Fax")#fax
+        textarea(name="messaggio")#messaggio Messaggio
+ 
+        div#contact-submit Invia messaggio

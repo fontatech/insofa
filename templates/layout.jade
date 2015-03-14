@@ -4,6 +4,10 @@ html
     include ./includes/header.jade
 
   body
+
+    block popups
+
+
     div#main-container
       div#main-container-inner
         header.mobi
@@ -18,13 +22,12 @@ html
           div#logocont
             img(src="img/logo.png")
           nav#menu
-            a(href="/").menu-item.active Home
-            a(href="/").menu-item Profile
-            a(href="/").menu-item Il divano
-            a(href="/").menu-item Prodotti
-            a(href="/").menu-item Servizi Dedicati
-            a(href="/").menu-item News
-            a(href="/").menu-item Contatti
+            a(href="index.html")#homemenu.menu-item.active Home
+            a(href="profile.html").menu-item Profile
+            a(href="divano.html").menu-item Il divano
+            a(href="prodotti.html").menu-item Prodotti
+            a(href="servizi.html").menu-item Servizi Dedicati
+            a(href="contatti.html").menu-item Contatti
 
             div#lang-container
               div.triangle
@@ -55,6 +58,8 @@ html
               a(href="") Disclaimer
               a(href="") Privacy
               a(href="") Contatti
+            div.half-width.right
+              img(src="img/gbr.png")
 
       div.clearfix
 
@@ -62,4 +67,5 @@ html
     script(src="js/TypingText.js")
     script(src="js/interact.min.js")
     script(src="js/components.js")
+    script(src="js/Slider.js")
     script(src="js/main.js")

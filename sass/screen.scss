@@ -187,6 +187,15 @@ header.desktop {
     width: 40.7%;
     height: 827px;
 
+    &.profile {
+        width: 60.04%;
+    }
+
+    &.ildivano {
+        width: 100%;
+        height: 852px;
+    }
+
     .container-inner {
         background-color: #c5c3c1;
         padding: 110px 128px 70px 62px;
@@ -328,6 +337,11 @@ p {
 #imagebox {
     width: 40.7%;
     height: 259px;
+
+    &.profile {
+        width: 39.96%;
+        height: 260px;
+    }
 }
 
 #artigianalita {
@@ -357,7 +371,7 @@ p {
     @include transition(all 0.4s ease);
 
     &:hover {
-        background-color: #867e75;
+        background-color: #867e75 !important;
     }
 }
 
@@ -440,6 +454,45 @@ footer {
             }
         }
     }
+
+    #line2 {
+        width: 100%;
+        height: 42px;
+        position: relative;
+        font-family: "BrandonMedium";
+        font-size: 21px;
+
+        .half-width {
+            width: 80%;
+            float: left;
+            position: absolute;
+            bottom: -21px;
+            left: 0;
+            color: #a7a7a7;
+
+            span {
+                text-transform: uppercase;
+            }
+
+            a {
+                text-decoration: none;
+                color: #a7a7a7;
+            }
+
+            span,a {
+                display: inline-block;
+                margin-right: 40px;
+            }
+
+            &.right {
+                bottom: -19px;
+                width: 20%;
+                right: 0;
+                left: auto;
+                text-align: right;
+            }
+        }
+    }
 }
 
 .show-animation {
@@ -448,4 +501,720 @@ footer {
 
 .hidden {
     display: none;
+}
+
+.prodotti-box {
+    height: 568px;
+    width: 50%;
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+
+    span {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    a {
+        @include transition(all 0.4s ease);
+        font-family: "BrandonMedium";
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        height: 62px;
+        width: 378px;
+        line-height: 62px;
+        border: 1px solid #fff;
+        text-transform: uppercase;
+        padding: 0 30px 0 19px;
+
+        &:hover {
+            background-color: #d1d1d1;
+            color: #4e4847;
+        }
+    }
+
+    .container-inner {
+        overflow: hidden;
+
+        .hover {
+            position: absolute;
+            bottom: -119px;
+            left: 0;
+            width: 100%;
+            height: 175px;
+            padding-left: 62px;
+            padding-top: 18px;
+            background-color: rgba(104, 98, 87, 0.7);
+            @include transition(all 0.4s ease);
+        }
+
+        &:hover .hover {
+            bottom: 0;
+        }
+    }
+
+    img {
+        height: 100%;
+    }
+}
+
+#textbox {
+    width: 81.4%;
+    height: 259px;
+
+    &.ildivano {
+        width: 40.7%;
+    }
+
+    .container-inner {
+        background-color: #c5c3c1;
+    }
+
+    p {
+        left: 62px;
+        right: 110px;
+    }
+}
+
+.centered-vertical {
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));
+}
+
+#contatti {
+    display: block;
+    width: 18.6%;
+    height: 259px;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    line-height: 120%;
+
+    .container-inner {
+        background-color: #4e4847;
+    }
+
+    &.profile {
+        width: 39.96%;
+        height: 284px;
+    }
+}
+
+.condividibar {
+    position: absolute;
+    height: 65px;
+    line-height: 65px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    background-color: #716d6b;
+    color: #fff;
+    font-size: 15px;
+    padding-right: 30px;
+
+    a {
+        display: inline-block;
+    }
+
+    a img {
+        width: 100%;
+    }
+
+    .tw {
+        margin-left: 18px;
+    }
+
+    .fb {
+        margin-left: 24px;
+    }
+
+    .bu {
+        width: 30px;
+        margin-left: 38px;
+    }
+}
+
+#prodotto {
+    overflow: hidden;
+
+    .container-inner {
+        overflow: hidden;
+    }
+
+    .container-inner > img {
+        height: 100%;
+        min-width: 100%;
+        vertical-align: middle;
+        width: auto;
+    }
+
+    .titolo {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 138px;
+        width: 1112px;
+        background-color: rgba(75, 69, 67, 0.7);
+        padding-left: 62px;
+        font-size: 50px;
+        text-transform: uppercase;
+        line-height: 120%;
+        padding-top: 32px;
+
+        h1 {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 72px;
+        right: 0;
+
+        .control {
+            cursor: pointer;
+            width: 66px;
+            height: 66px;
+            background-color: rgba(75, 69, 67, 0.7);
+            margin-left: 6px;
+            float: left;
+            position: relative;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    .condividibar {
+        left: auto;
+        width: 282px;
+        height: 66px;
+        background-color: rgba(75, 69, 67, 0.7);
+        
+        img {
+            vertical-align: middle;
+        }
+    }
+}
+
+.rigabianca {
+    height: 10px;
+    background-color: #fff;
+    width: 72px;
+    margin-left: 4px;
+    display: block;
+}
+
+.plaintext {
+    width: 100%;
+    height: 95px;
+    padding-top: 53px;
+    font-size: 23px;
+    color: #7f7f7f;
+
+    &.contatti1 {
+        width: 20.37%;
+    }
+
+    &.contatti2 {
+        width: 79.63%;
+    }
+}
+
+#informazioni {
+    width: 50.85%;
+    height: 188px;
+
+    &.profile {
+        width: 39.96%;
+        height: 142px;
+    }
+
+    .container-inner {
+        background-color: #4e4847;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+
+        .centered {
+            width: 100%;
+            text-align: center;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 30px;
+        }
+    }
+}
+
+#telefono {
+    display: block;
+    width: 49.15%;
+    height: 188px;
+
+    &.profile {
+        width: 39.96%;
+        height: 142px;
+    }
+
+    &.visible .container-inner {
+        background-color: #867e75;
+    }
+
+    .container-inner {
+        background-color: #4e4847;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        @include transition(all 0.4s);
+
+        .centered {
+            width: 100%;
+            text-align: center;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 30px;
+        }
+    }
+}
+
+#popup-shadow {
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    position: fixed;
+    background-color: rgba(234,234,234,0.7);
+    opacity: 0;
+    @include transform(scale(0.5));
+    @include transition(transform 0.4s ease, opacity 0.4s ease);
+
+    &.open {
+        top: 0;
+        opacity: 1;
+        @include transform(scale(1));
+    }
+}
+
+#popup-img {
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    padding: 25px;
+    opacity: 0;
+    @include transform(scale(0.5));
+    @include transition(transform 0.4s ease, opacity 0.4s ease);
+
+    &.open {
+        top: 0;
+        opacity: 1;
+        @include transform(scale(1));
+    }
+
+    .inner {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 200%;
+        }
+    }
+
+    #close-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 64px;
+        height: 64px;
+        background-color: rgba(75, 69, 67, 0.7);
+        cursor: pointer;
+
+        span {
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -1px;
+            margin-left: -20px;
+            @include transform(rotate(45deg));
+
+            &:before {
+                content: '';
+                width: 40px;
+                height: 2px;
+                background-color: #fff;
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include transform(rotate(90deg));
+            }
+        }
+    }
+}
+
+.xsign {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 4px;
+    margin-top: -2px;
+    margin-left: -25px;
+    @include transform(rotate(45deg));
+    background-color: #fff;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 4px;
+        background-color: #fff;
+        @include transform(rotate(90deg));
+    }
+}
+
+.goleft {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -15px;
+    width: 25px;
+    height: 4px;
+    background-color: #fff;
+    @include transform(rotate(135deg));
+
+    &:before {
+        content: '';
+        width: 25px;
+        height: 4px;
+        background-color: #fff;
+        position: absolute;
+        top: -11px;
+        left: 44%;
+        @include transform(rotate(270deg));
+    }
+
+    &.right {
+        margin-top: 5px;
+        margin-left: -9px;
+        @include transform(rotate(315deg));
+    }
+}
+
+#popup-form {
+    width: 1105px;
+    height: 647px;
+    position: fixed;
+    z-index: 200;
+    top: -50%;
+    left: 50%;
+    margin-top: -323px;
+    margin-left: -552px;
+    border: 2px solid #adadad;
+    background-color: #fff;
+    padding: 100px 90px;
+    @include transform(scale(0.5));
+    @include transition(opacity 0.4s ease, transform 0.4s ease);
+    opacity: 0;
+
+    &.open {
+        top: 50%;
+        opacity: 1;
+        @include transform(scale(1));
+    }
+
+    .form-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        h2 {
+            font-size: 23px;
+            color: #7f7f7f;
+            line-height: 120%;
+            margin-bottom: 16px;
+        }
+
+        input {
+            width: 445px;
+            height: 66px;
+            line-height: 66px;
+            outline: 0;
+            color: #7f7f7f;
+            font-size: 23px;
+            padding-left: 25px;
+            background-color: #ecebea;
+            margin-bottom: 25px;
+            @include appearance(none);
+            border: 0;
+
+            @include input-placeholder {
+                color: #7f7f7f;
+            }
+        }
+
+        input:nth-child(odd) {
+            margin-right: 25px;
+        }
+
+        textarea {
+            height: 134px;
+            width: 915px;
+            font-size: 23px;
+            padding-left: 25px;
+            padding-top: 30px;
+            line-height: 120%;
+            background-color: #ecebea;
+            color: #7f7f7f;
+            outline: 0;
+            @include appearance(none);
+            border: 0;
+            margin-bottom: 25px;
+            font-family: "Brandon";
+        }
+
+        #contact-submit {
+            float: right;
+            cursor: pointer;
+            width: 262px;
+            height: 49px;
+            line-height: 49px;
+            font-size: 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+            color: #7f7f7f;
+            text-transform: uppercase;
+            @include transition(all 0.4s);
+
+            &:hover {
+                background-color: #adadad;
+                color: #fff;
+            }
+        }
+
+        #close-form {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            right: 4px;
+            cursor: pointer;
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -1px;
+                margin-left: -10px;
+                width: 20px;
+                height: 2px;
+                background-color: #777271;
+                @include transform(rotate(45deg));
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 2px;
+                    background-color: #777271;
+                    top: 0;
+                    left: 0;
+                    @include transform(rotate(90deg));
+                }
+            }
+        }
+    }
+}
+
+#contattitel {
+    display: block;
+    width: 20.37%;
+    height: 190px;
+    text-align: center;
+    color: #fff;
+    font-size: 23px;
+
+    img {
+        width: 30px;
+        margin-bottom: 28px;
+    }
+
+    .container-inner {
+        background-color: #4e4847;
+    }
+
+    .centered {
+        width:100%;
+        text-align: center;
+    }
+}
+
+#contattimail {
+    clear: left;
+    width: 20.37%;
+    height: 164px;
+    color: #fff;
+    font-size: 31px;
+
+    img {
+        width: 45px;
+        margin-bottom: 38px;
+    }
+
+    .container-inner {
+        background-color: #4e4847;
+    }
+
+    .centered {
+        width:100%;
+        text-align: center;
+    }
+}
+
+#contattiform {
+    width: 79.63%;
+    height: 354px;
+
+    input {
+        width: 544px;
+        height: 70px;
+        line-height: 70px;
+        background-color: #fff;
+        margin-bottom: 25px;
+        outline: 0;
+        border: 0;
+        font-size: 23px;
+        color: #7f7f7f;
+        padding-left: 22px;
+        @include appearance(none);
+
+        @include input-placeholder {
+            color: #7f7f7f;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        height: 164px;
+        line-height: 120%;
+        background-color: #fff;
+        outline: 0;
+        border: 0;
+        font-size: 23px;
+        color: #7f7f7f;
+        padding-left: 22px;
+        padding-top: 22px;
+        font-family: "Brandon";
+        @include appearance(none);
+    }
+
+    input:nth-child(odd) {
+        margin-right: 25px;
+    }
+}
+
+.onecolumn {
+    width: 20.37%;
+    float: left;
+}
+
+#contattisubmit {
+    width: 100%;
+    height: 120px;
+}
+
+#submit-button {
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: right;
+    margin-top: 25px;
+    border: 1px solid #d8d8d8;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #7f7f7f;
+    cursor: pointer;
+    @include transition(all 0.4s);
+
+    &:hover {
+        color: #fff;
+        background-color: #adadad;
+    }
+}
+
+.servizi {
+    height: 1111px;
+    width: 50.89%;
+
+    header {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 543px;
+        margin-bottom: 94px;
+
+        img {
+            height: 100%;
+        }
+
+        .titlebar {
+            width: 100%;
+            height: 65px;
+            line-height: 65px;
+            color: #fff;
+            padding-left: 62px;
+            font-size: 28px;
+            background-color: rgba(68,71,76,0.7);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .container-inner {
+        background-color: #c5c3c1;
+    }
+
+    p {
+        padding-left: 62px;
+        padding-right: 62px;
+    }
+
+    &.right {
+        width: 49.11%;
+    }
 }

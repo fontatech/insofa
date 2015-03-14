@@ -1,4 +1,8 @@
-@media (max-width: 1449px) {
+@media (max-width: 1499px) {
+
+    #prodotto .titolo {
+        width: 863px;
+    }
 
     #main-container {
         padding: 20px;
@@ -12,7 +16,7 @@
         height: 779px;
     }
 
-    #artigianalita, #imagebox {
+    #artigianalita, #imagebox, #imagebox.profile {
         height: 211px;
     }
 }

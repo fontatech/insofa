@@ -28,3 +28,14 @@
     top: 50%;
   }
 }
+@-webkit-keyframes slide {
+  0% {
+    -webkit-filter: blur(0px);
+  }
+  50% {
+    -webkit-filter: blur(400px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
